@@ -1,0 +1,115 @@
+/* Bottom Status Bar */
+#msid-bottombar {
+		color: #fff;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		font-family: arial, verdana, sans-serif;
+		font-size: 11px;
+		line-height: 24px;
+		margin: 0;
+		min-width: 500px;
+		overflow: hidden;
+		padding: 0;
+		width: 100%;
+		height: 25px;
+		}
+	#msid-formarea {
+		background: transparent url(http://x.myspacecdn.com/modules/webim/static/img/sprite_consolebg.gif) repeat-x scroll 0 -66px;
+		border-top: 1px solid #70A0F7;
+		float: left;
+		min-width: 400px;
+		padding: 0 0 0 1%;
+		text-align: right;
+		width: 99%;
+		z-index: -1;
+		}
+		#msid-formarea label {
+			padding-left: 15px;
+			}
+		#msid-formarea input,
+		#msid-formarea select {
+			font-size: 9px;
+			}
+		#msid-formarea #btnupdatestatus {
+			margin-left: 5px;
+			margin-right: 65px;
+			}
+	
+	#msid-roundedge {
+		background: url(msid_roundcorner.png) 0 0 no-repeat;
+		bottom: 0;
+		height: 25px;
+		position: absolute;
+		right: 0;
+		width: 60px;
+		z-index: 98;
+		}
+		
+	#msid-icons {
+		background: transparent url(http://x.myspacecdn.com/modules/webim/static/img/sprite_consolebg.gif) repeat-x scroll 0 -66px;
+		border-top: 1px solid #70A0F7;
+		border-left: 1px solid #70A0F7;
+		padding: 2px 5px 0 5px;
+		position: absolute;
+		bottom: 0;
+		right: 20px;
+		float: right;
+		height: 22px;
+		text-align: right;
+		width: 24px;
+		z-index: 99;
+		}
+		
+		#msid-mdpicon {
+				background: url(icon_myspaceid.png) 0 0 no-repeat;
+				display: block;
+				padding: 0;
+				height: 18px;
+				width: 17px;
+				}
+		
+	#msid-controls {
+		background: transparent url(http://x.myspacecdn.com/modules/webim/static/img/sprite_consolebg.gif) repeat-x scroll 0 -66px;
+		border-top: 1px solid #70A0F7;
+		border-left: 1px solid #70A0F7;
+		padding: 6px 5px 0 0;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		float: right;
+		height: 18px;
+		text-align: right;
+		width: 20px;
+		z-index: 99;
+		}
+		
+		a#msid-arrowtoggle {
+			display: block;
+			float: right;
+			height: 12px;
+			margin: 0;
+			padding: 0;
+			width: 11px;
+			}
+
+		a.msid-leftarrows {
+			background: transparent url(http://x.myspacecdn.com/modules/webim/static/img/sprite_icons_arrows.gif) no-repeat scroll 1px -82px;
+			}
+		a.msid-rightarrows {
+			background: transparent url(http://x.myspacecdn.com/modules/webim/static/img/sprite_icons_arrows.gif) no-repeat scroll 1px -70px;
+			}
+
+/*  Styling for master wrapper our jQuery generates */
+html, body {
+	margin:0px !important; /* FF hack: or we'll have double scrollbar showing on the browser */
+	overflow:hidden !important; /* hide browser's main scrollbar */
+}
+
+#msid-wrapper {
+	width:100%;
+	background-color: transparent; /* DO NOT REMOVE THIS; or you'll have issue w/ the scrollbar, when the mouse pointer is on a white space */
+	height:100%;	/* this will make sure that the height will extend at the bottom */
+	overflow:auto;	/* will have a scrollbar at our content containier */
+	position:absolute; /* container div must be absolute, for our fixed bar to work */
+}

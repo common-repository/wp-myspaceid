@@ -1,0 +1,43 @@
+.myspace_profile_pic {
+  float: right;
+  padding: 0 5px 5px 5px;
+}
+
+.myspace_status_div {
+}
+
+.myspace_profile_header {
+  text-align: right;
+  padding: 5px;
+  padding-top: 10px;
+  border: gray dotted 1px;
+  background: white;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 175px;
+}
+
+/* Admin Section */
+
+
+
+			
+.myspaceid_link {
+	background-image: url('icon_myspaceid.png');
+}
+
+.myspaceid_login_button_p {
+	float: right;
+	margin-bottom: 1em;
+}
+
+.myspaceid_login_button_left {
+	padding-right: 5px;
+	float: left;
+}
+
+.myspaceid_login_button_right {
+	padding-left: 5px;
+	float: right;
+}

@@ -1,0 +1,16 @@
+Common subdirectories: openid/Auth and openid.new/Auth
+diff -u openid/common.php openid.new/common.php
+--- openid/common.php	2009-03-20 03:22:18.000000000 -0700
++++ openid.new/common.php	2009-05-13 16:33:02.000000000 -0700
+@@ -630,6 +630,8 @@
+ 		// Bind the provided identity to the just-created user
+ 		openid_add_user_identity($user_id, $identity_url);
+ 
++		do_action('post_user_add', $user_id, $user_data);
++
+ 		openid_status('redirect');
+ 
+ 		if ( !$user->has_cap('edit_posts') ) $redirect_to = '/wp-admin/profile.php';
+Only in openid.new: common.php~
+Common subdirectories: openid/f and openid.new/f
+Common subdirectories: openid/lang and openid.new/lang
